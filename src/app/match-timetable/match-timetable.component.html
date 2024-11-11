@@ -1,0 +1,20 @@
+<div class="table-container">
+    <h3>QA Match Table</h3>
+    <p>Today</p>
+    <table>
+      <tr>
+        <th>#</th>
+        <th>Team</th>
+        <th>M</th>
+        <th>P</th>
+        <th>NRR</th>
+      </tr>
+      <tr *ngFor="let team of teams; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ team.name }}</td>
+        <td>{{ team.matches }}</td>
+        <td>{{ team.points }}</td>
+        <td>{{ team.nrr }}</td>
+      </tr>
+    </table>
+  </div>

@@ -1,0 +1,46 @@
+#logo {
+    height: 4rem;
+    width: 8rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    padding: 0 2rem;
+}
+
+.row {
+    display: flex;
+    justify-content: space-around;
+    min-height: 2%;
+    background-color:#8A1738;
+   
+}
+
+.column2 {
+    display: flex;
+    flex: 0 0 60%;
+    justify-content: center;
+    align-items: center;
+}
+.column2 ul {
+    display: flex;
+    list-style: none;
+}
+
+.column2 li {
+    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.column1 {
+    flex: 0 0 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.column1 img {
+    max-width: 100%;
+    height: auto;
+}
+

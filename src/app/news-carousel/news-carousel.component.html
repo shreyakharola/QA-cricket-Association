@@ -1,0 +1,14 @@
+
+  <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true">
+    <ng-template ngbSlide *ngFor="let image of images; let i = index">
+      <div class="picsum-img-wrapper img-fluid">
+        <img [src]="image" [alt]="'slide ' + (i + 1)" />
+      </div>
+      <div class="carousel-caption">
+        <h3>Slide {{ i + 1 }} label</h3>
+        <p>Description for slide {{ i + 1 }} goes here.</p>
+      </div>
+    </ng-template>
+  </ngb-carousel>
+
+

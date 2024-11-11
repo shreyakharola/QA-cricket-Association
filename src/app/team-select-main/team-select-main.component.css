@@ -1,0 +1,59 @@
+.card-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+  width: 100%;
+}
+
+.card-row {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  gap: 5rem;
+  background-color: #8A1738;
+  height: 40%;
+  flex-wrap: nowrap;
+  padding: 0 5.0em 0 3.0em;
+  scrollbar-width: none;
+}
+
+.scroll-button {
+  font-size: 18%;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  color: aliceblue;
+  z-index: 8;
+}
+
+.scroll-button.right {
+  right: 0;
+}
+
+.scroll-button.left {
+  left: 0;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  text-align: center;
+  color: #8A1738;
+  border-radius: 5%;
+  font-weight: 500;
+}
+
+.a_card {
+  text-decoration: none;
+}
+
+.card img {
+  width: 100%;
+  height: 100%;
+  border-radius: 5%;
+}
+

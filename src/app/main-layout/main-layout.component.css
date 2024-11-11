@@ -1,0 +1,60 @@
+:root{
+    --primary-color: #8A1738;
+  }
+  
+  .card-row {
+      display: flex;
+      overflow-x: auto;
+      scroll-behavior: smooth;
+      gap: 5rem;
+      background-color:#8A1738;
+      height: 40%;
+      flex-wrap: nowrap;
+      padding: 0 5.0em 0 3.0em;
+      scrollbar-width: none;
+  }
+  
+  .card-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      width: 100%;
+    }
+  
+  
+  
+  .scroll-button.right {
+      font-size: 180px;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      position: absolute;
+      color: aliceblue;
+      right: 0;
+      z-index: 8;
+      margin: 0 0 5% 0;
+    }
+  
+    .page-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      padding: 20px;
+    }
+    
+    .news-section {
+      grid-column: 1;
+    }
+    
+    .match-section {
+      grid-column: 2;
+    }
+    
+    .app-container {
+      display: flex;
+      justify-content: space-around;
+      padding: 20px;
+      background-color: #8A1738;
+      color: white;
+    }
+    

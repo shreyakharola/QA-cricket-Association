@@ -1,3 +1,20 @@
 import { Routes } from '@angular/router';
+import { TeamDetailComponent } from './team-detail/team-detail.component';
+import { TeamSelectMainComponent } from './team-select-main/team-select-main.component';
+import { MainLayoutComponent } from './main-layout/main-layout.component';
+export const appRoutes: Routes = [
+    {
+        path: 'cards',
+        component: MainLayoutComponent // Loads the main page with header, cards, etc.
+    },
+    {
+        path: 'cards/:id',
+        component: TeamDetailComponent // Loads only the team details page
+    },
+    {
+        path: '',
+        redirectTo: 'cards',
+        pathMatch: 'full'
+    }
+];
 
-export const routes: Routes = [];

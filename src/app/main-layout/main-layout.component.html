@@ -1,0 +1,13 @@
+<!-- main-layout.component.html -->
+<app-header></app-header>
+<div class="card-container">
+    <div class="card-row">
+        <app-team-select-main *ngFor="let team of teams" [teamId]="team.id" [teamImage]="team.image" [teamName]="team.name"></app-team-select-main>
+    </div>
+    <button class="scroll-button right" (click)="scrollRight()">›</button>
+</div>
+
+<div class="app-container">
+    <app-news-carousel></app-news-carousel>
+    <app-match-timetable></app-match-timetable>
+</div>
