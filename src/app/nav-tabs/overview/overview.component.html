@@ -1,25 +1,5 @@
-<app-header></app-header>
-<div class="team-head">
-  <div *ngIf=team class="banner">
-    <img [src]="team.image" alt="{{ team.name }}" class="current-team-img">
-    <span class="series-name">India tour of South Africa 2024</span>
-    <span class="series-date">Nov 8 - Nov 15</span>
-    <img src="assets/kenya.jpg" class="team-next">
-    <div class="next-btn">
-        <img src="assets/next-btn.png" alt="next-btn">
-    </div>
-</div>
-<nav class="nav-tabs">
-  <a routerLink="overview" routerLinkActive="selected" class="tab">Overview</a>
-  <a routerLink="matches" routerLinkActive="" class="tab">Matches</a>
-  <a routerLink="" routerLinkActive="" class="tab">Squads</a>
-  <a routerLink="" routerLinkActive="" class="tab">Series Stats</a>
-  <a routerLink="" routerLinkActive="" class="tab">News</a>
-  <a routerLink="" routerLinkActive="" class="tab">Info</a>
-</nav>
-</div>
-<!-- <div class="row">
-
+<app-team-detail></app-team-detail>
+<div class="row">
     <div class="column-left">
         <div class="sub-heading">
             <h6>Featured Matches</h6>
@@ -120,4 +100,4 @@
         </div>
     </div>
 </div>
-</div> -->
+</div>

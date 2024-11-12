@@ -1,13 +1,12 @@
 import { CommonModule } from '@angular/common';
 import { Component, inject, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, RouterLink, RouterLinkActive } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
-
 
 @Component({
   selector: 'app-team-detail',
   standalone: true,
-  imports: [CommonModule, HeaderComponent],
+  imports: [CommonModule, HeaderComponent, RouterLink, RouterLinkActive],
   templateUrl: './team-detail.component.html',
   styleUrl: './team-detail.component.css'
 })

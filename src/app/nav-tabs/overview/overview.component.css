@@ -1,79 +1,4 @@
-/* Existing Styles */
-body {
-    background-color: #4b091c;
-    overflow-x: hidden;
-}
-
-.team-head {
-    background-color: #4b091c;
-    padding: 2% 2% 0 0;
-    text-align: center;
-    color: #fff;
-}
-
-.current-team-img {
-    border-radius: 4%;
-    width: 12%;
-    height: 12%;
-}
-
-.team-next {
-    width: 5rem;
-    height: auto;
-    border-radius: 4%;
-}
-
-.next-btn img {
-    width: 20px;
-    height: 20px;
-    background-color: #9b0f36;
-}
-
-.banner {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-}
-
-.series-name {
-    font-size: 1.5rem;
-    font-weight: bold;
-}
-
-.series-date {
-    font-size: 0.9rem;
-    color: #ccc;
-    margin-right: 15%;
-}
-
-/* Navigation Tabs */
-
-.nav-tabs {
-    display: flex;
-    justify-content: left;
-    margin-left: 10%;
-    background-color: #4b091c;
-    margin-top: 2%;
-}
-
-.tab {
-    color: #ccc;
-    padding: 10px 40px;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.tab.active {
-    color: #f05454;
-    border-bottom: 2px solid #f05454;
-}
-
-.tab:hover {
-    color: #f05454;
-}
-
-/* .row {
+.row {
     display: flex;
     width: 100%;
     height: auto;
@@ -109,7 +34,7 @@ h5 {
 }
 
 /* Fixtures */
-/* 
+
 .fixtures {
     margin-top: 1rem;
 }
@@ -140,7 +65,7 @@ h5 {
 }
 
 /* Key Stats */
-/* .key-stats {
+.key-stats {
     width: 100%;
     padding: 10px;
 }
@@ -208,4 +133,4 @@ h5 {
 .stat-label {
     font-size: 0.8rem;
     color: #777;
-}   */
+}
