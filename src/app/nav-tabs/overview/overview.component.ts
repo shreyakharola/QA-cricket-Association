@@ -4,7 +4,7 @@ import { TeamDetailComponent } from '../../team-detail/team-detail.component.js'
 @Component({
   selector: 'app-overview',
   standalone: true,
-  imports: [TeamDetailComponent],
+  imports: [],
   templateUrl: './overview.component.html',
   styleUrl: './overview.component.css'
 })

@@ -1,5 +1,4 @@
-
-  <ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true">
+<ngb-carousel [showNavigationArrows]="true" [showNavigationIndicators]="true">
     <ng-template ngbSlide *ngFor="let image of images; let i = index">
       <div class="picsum-img-wrapper img-fluid">
         <img [src]="image" [alt]="'slide ' + (i + 1)" />
@@ -10,5 +9,3 @@
       </div>
     </ng-template>
   </ngb-carousel>
-
-

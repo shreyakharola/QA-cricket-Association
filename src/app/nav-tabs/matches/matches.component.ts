@@ -1,10 +1,9 @@
 import { Component } from '@angular/core';
-import { TeamDetailComponent } from '../../team-detail/team-detail.component';
 
 @Component({
   selector: 'app-matches',
   standalone: true,
-  imports: [TeamDetailComponent],
+  imports: [],
   templateUrl: './matches.component.html',
   styleUrl: './matches.component.css'
 })
