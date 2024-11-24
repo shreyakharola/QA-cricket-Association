@@ -1,0 +1,65 @@
+.match-stats-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .match-summary {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    width: 100%;
+    background-color: #f9f9f9;
+  }
+  
+  .team {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 20px;
+  }
+  
+  .team img {
+    width: 60px;
+    height: 40px;
+    margin-bottom: 8px;
+  }
+  
+  .team p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  
+  .score {
+    text-align: center;
+  }
+  
+  .score h1 {
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .score p {
+    font-size: 14px;
+    margin-top: 8px;
+    color: #555;
+  }
+  
+  .winner {
+    color: green;
+    font-weight: bold;
+  }
+  

@@ -4,12 +4,11 @@ import { HeaderComponent } from '../header/header.component';
 import { TeamSelectMainComponent } from '../team-select-main/team-select-main.component';
 import { NewsCarouselComponent } from '../news-carousel/news-carousel.component';
 import { MatchTableComponent } from '../match-timetable/match-timetable.component';
-import { RouterOutlet } from '@angular/router';
-
+import { FooterComponent } from "../footer/footer/footer.component";
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, TeamSelectMainComponent, NewsCarouselComponent, MatchTableComponent, RouterOutlet],
+  imports: [CommonModule, HeaderComponent, TeamSelectMainComponent, NewsCarouselComponent, MatchTableComponent ],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.css'
 })

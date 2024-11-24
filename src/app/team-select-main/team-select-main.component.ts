@@ -1,4 +1,4 @@
-import { Component, inject, Input } from '@angular/core';
+import { Component, inject, Injectable, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router, RouterModule } from '@angular/router';
 @Component({
@@ -7,6 +7,9 @@ import { Router, RouterModule } from '@angular/router';
   imports: [CommonModule, RouterModule],
   templateUrl: './team-select-main.component.html',
   styleUrl: './team-select-main.component.css'
+})
+@Injectable({
+  providedIn: 'root',
 })
 export class TeamSelectMainComponent {
   @Input() teamId: number = 0;

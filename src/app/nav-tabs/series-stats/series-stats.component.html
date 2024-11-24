@@ -1,1 +1,18 @@
-<p>series-stats works!</p>
+<div class="match-stats-container">
+    <h2>{{ matchType }}</h2>
+    <div class="match-summary">
+      <div class="team">
+        <img [src]="team1.flag" alt="{{ team1.name }} Flag" />
+        <p>{{ team1.name }}</p>
+      </div>
+      <div class="score">
+        <h1>{{ team1.score }} - {{ team2.score }}</h1>
+        <p>{{ matchesPlayed }}/{{ matchesPlayed }} played, <span class="winner">{{ seriesWinner }} won {{ matchType }} series</span></p>
+      </div>
+      <div class="team">
+        <img [src]="team2.flag" alt="{{ team2.name }} Flag" />
+        <p>{{ team2.name }}</p>
+      </div>
+    </div>
+  </div>
+  

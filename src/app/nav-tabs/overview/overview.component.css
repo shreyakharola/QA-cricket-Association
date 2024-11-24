@@ -79,7 +79,7 @@ h5 {
 .stat-item {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 10px;
+    padding: 20px;
     margin-bottom: 15px;
     background-color: #fff;
 }
@@ -133,4 +133,38 @@ h5 {
 .stat-label {
     font-size: 0.8rem;
     color: #777;
+}
+
+.series-info-heading{
+    display: flex;
+    justify-content: left;
+    padding-top: 5%;
+    font-size: 1.3rem;
+    font-weight: 500;
+}
+
+.series-match-info {
+    text-align: left;
+    color: #555;
+}
+p{
+    margin-bottom: 0;
+}
+
+.series-team {
+    display: flex;
+    font-size: 1.0em;
+    color: #777;
+    font-weight: 200;
+    padding: 2%;
+}
+
+.series-item {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    column-gap: 15%;
+    padding: 2%;
+    color:#000;
+    font-weight: 500;
 }

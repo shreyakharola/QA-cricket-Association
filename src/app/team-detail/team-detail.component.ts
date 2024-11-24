@@ -3,6 +3,7 @@ import { Component, inject, OnInit } from '@angular/core';
 import { ActivatedRoute, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { HeaderComponent } from '../header/header.component';
 
+
 @Component({
   selector: 'app-team-detail',
   standalone: true,
@@ -12,6 +13,7 @@ import { HeaderComponent } from '../header/header.component';
 })
 
 export class TeamDetailComponent implements OnInit {
+ 
   appRoute = inject(ActivatedRoute)
   team: { id: number; image: string; name: string } | undefined;
 
@@ -28,7 +30,8 @@ export class TeamDetailComponent implements OnInit {
     { id: 10, image: 'assets/kenya.jpg', name: 'Kenya' },
     { id: 11, image: 'assets/oman.jpg', name: 'Oman' }
   ];
-teamId: any;
+teamId = Number;
+
 
   constructor(private route: ActivatedRoute) {
 

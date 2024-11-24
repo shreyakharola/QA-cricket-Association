@@ -1,1 +1,26 @@
-<p>news works!</p>
+<div class="news-container">
+    <h2>IND vs SA 2024 News</h2>
+    <div class="top-news">
+      <div *ngFor="let news of newsTop" class="news-card">
+        <img [src]="news.image" alt="News Image" />
+        <div class="news-details">
+          <p class="author">{{ news.author }} - {{ news.time }}</p>
+          <p class="title">{{ news.title }}</p>
+        </div>
+      </div>
+    </div>
+  
+    <hr />
+  
+    <div class="main-news">
+      <div *ngFor="let news of newsMain" class="main-news-card">
+        <img [src]="news.image" alt="Main News Image" />
+        <div class="news-details">
+          <p class="author">{{ news.author }} - {{ news.time }}</p>
+          <p class="title">{{ news.title }}</p>
+          <p class="description">{{ news.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

@@ -1,2 +1,33 @@
-
-<p>matches works!</p>
+<div class="container">
+    <h3>IND vs SA 2024 Matches</h3>
+    <div *ngFor="let match of matches" class="match-section">
+      <h4>{{ match.date }}</h4>
+      <p>{{ match.match }}</p>
+  
+      <div class="teams">
+        
+        <div class="team">
+          <img [src]="match.team1.flag" alt="{{ match.team1.name }} Flag" />
+          <div>
+            <h5>{{ match.team1.name }}</h5>
+            <p>{{ match.team1.score }} <span>{{ match.team1.overs }}</span></p>
+          </div>
+        </div>
+  
+        
+        <div class="result">
+          <span [style.color]="match.result.color">{{ match.result.winner }} Won</span>
+          <p>{{ match.result.detail }}</p>
+        </div>
+  
+        <div class="team">
+          <img [src]="match.team2.flag" alt="{{ match.team2.name }} Flag" />
+          <div>
+            <h5>{{ match.team2.name }}</h5>
+            <p>{{ match.team2.score }} <span>{{ match.team2.overs }}</span></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
