@@ -5,10 +5,11 @@ import { TeamSelectMainComponent } from '../team-select-main/team-select-main.co
 import { NewsCarouselComponent } from '../news-carousel/news-carousel.component';
 import { MatchTableComponent } from '../match-timetable/match-timetable.component';
 import { FooterComponent } from "../footer/footer/footer.component";
+import { ScorecardComponent } from "../nav-tabs/matches/scorecard/scorecard.component";
 @Component({
   selector: 'app-main-layout',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, TeamSelectMainComponent, NewsCarouselComponent, MatchTableComponent ],
+  imports: [CommonModule, HeaderComponent, TeamSelectMainComponent, NewsCarouselComponent, MatchTableComponent, ScorecardComponent],
   templateUrl: './main-layout.component.html',
   styleUrl: './main-layout.component.css'
 })

@@ -1,0 +1,39 @@
+<app-header></app-header>
+<div class="banner-container">
+    <div class="score-section">
+        <span class="team-score">
+            <img src="assets/flags/germany.png" alt="germany" class="team-icon" />
+            GER • 104(51.2)
+        </span>
+    </div>
+    <div class="result-section">
+        <h3>India won by 295 runs 🏆</h3>
+    </div>
+    <div class="score-section">
+        <span class="team-score">
+            <img src="assets/flags/india.png" alt="India" class="team-icon" />
+            IND • 150(49.4)
+        </span>
+    </div>
+</div>
+
+<nav class="nav-tabs">
+    <a routerLink="overview" routerLinkActive="selected" class="tab">Match Info</a>
+    <a routerLink="series-stats" routerLinkActive="selected" class="tab">Live</a>
+    <a routerLink="squads" routerLinkActive="selected" class="tab">Score Card</a>
+    
+</nav>
+<div class="col-md-10 br-right col-16 container">
+    <div class="h3-score">
+        <h3>Score Card</h3>
+    </div>
+
+<div class="score-btn">
+<button routerLink="overview" routerLinkActive="selected"  type="button" class="btn btn-outline-secondary btn-new" >IND 1st Innings</button>
+<button routerLink="info" routerLinkActive="selected"  type="button" class="btn btn-outline-secondary btn-new">GER 1st Innings</button>
+<button routerLink="news" routerLinkActive="selected"  type="button" class="btn btn-outline-secondary btn-new">IND 2nd Innings</button>
+<button routerLink="news" routerLinkActive="selected"  type="button" class="btn btn-outline-secondary btn-new">GER 2nd Innings</button>
+</div>
+</div>
+<router-outlet></router-outlet>
+

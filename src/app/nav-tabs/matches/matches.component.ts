@@ -1,16 +1,20 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { ActivatedRoute, Router, RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-matches',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink, RouterLinkActive],
   templateUrl: './matches.component.html',
   styleUrl: './matches.component.css'
 })
 export class MatchesComponent {
+
+
   matches = [
     {
+      id:1,
       date: 'Friday, November 8',
       match: '1st T20, IND vs SA 2024',
       team1: { name: 'SA', score: '141', overs: '17.5', flag: 'assets/flags/south-africa.png' },
@@ -18,6 +22,7 @@ export class MatchesComponent {
       result: { winner: 'IND', detail: 'by 61 runs', color: 'blue' },
     },
     {
+      id:2,
       date: 'Sunday, November 10',
       match: '2nd T20, IND vs SA 2024',
       team1: { name: 'SA', score: '128/7', overs: '19.0', flag: 'assets/flags/south-africa.png' },
@@ -32,4 +37,22 @@ export class MatchesComponent {
       result: { winner: 'IND', detail: 'by 11 runs', color: 'blue' },
     },
   ];
+
+
+  teamId!: number;
+
+  constructor(private route: ActivatedRoute, private router: Router) {}
+
+  ngOnInit(): void {
+    this.route.parent?.params.subscribe(params => {
+      this.teamId = +params['id'];
+    });
+  }
+
+  navigateToScorecard() {
+    this.router.navigate(['/scorecard']);
+  }
+
+
+
 }

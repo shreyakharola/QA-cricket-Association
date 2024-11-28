@@ -1,6 +1,6 @@
 import { Component, inject, Injectable, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { Router, RouterModule } from '@angular/router';
+import { Router, RouterModule, RouterOutlet } from '@angular/router';
 @Component({
   selector: 'app-team-select-main',
   standalone: true,

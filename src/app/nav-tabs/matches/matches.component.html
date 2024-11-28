@@ -4,8 +4,7 @@
       <h4>{{ match.date }}</h4>
       <p>{{ match.match }}</p>
   
-      <div class="teams">
-        
+      <div class="teams" (click)="navigateToScorecard()">
         <div class="team">
           <img [src]="match.team1.flag" alt="{{ match.team1.name }} Flag" />
           <div>
@@ -30,4 +29,5 @@
       </div>
     </div>
   </div>
-  
+
+
