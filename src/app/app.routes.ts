@@ -8,6 +8,7 @@ import { NewsComponent } from './nav-tabs/news/news.component';
 import { InfoComponent } from './nav-tabs/info/info.component';
 import { SquadsComponent } from './nav-tabs/squads-main/squads/squads.component';
 import { ScorecardComponent } from './nav-tabs/matches/scorecard/scorecard.component';
+import path from 'node:path';
 
 export const appRoutes: Routes = [
     {
@@ -23,7 +24,8 @@ export const appRoutes: Routes = [
             { path: 'squads', component: SquadsComponent},
             { path: 'series-stats', component: SeriesStatsComponent },
             { path: 'news', component: NewsComponent },
-            { path: 'info', component: InfoComponent }
+            { path: 'info', component: InfoComponent },
+            { path: '', component: OverviewComponent  }
         ] 
     },
     {

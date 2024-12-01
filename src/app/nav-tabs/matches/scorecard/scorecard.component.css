@@ -38,7 +38,7 @@
 .nav-tabs {
   display: flex;
   justify-content: left;
-  padding-left: 10%;
+  padding-left: 8%;
   column-gap: 2%;
   background-color: #4b091c;
 }
