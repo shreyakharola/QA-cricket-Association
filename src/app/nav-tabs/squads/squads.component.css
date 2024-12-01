@@ -1,28 +1,28 @@
 .squad-container {
     display: flex;
     flex-direction: column;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: 1%;
+    font-family: var(--primary-font-family);
   }
   
   h1 {
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .teams {
     display: flex;
     flex-direction: row;
-    gap: 20px;
+    gap: 1.8em;
   }
   .team-heading img{
     height: 12%;
     width: 12%;
-    padding: 2%;
+    padding: var(--primary-padding);
 
   }
   .team-heading span{
-    font-weight: 400;
+    margin-bottom: var(--primary-margin-bottom);
     display: flex;
     flex-direction: row;
   }
@@ -30,14 +30,14 @@
     width: 30%;
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: var(--primary-gap);
   }
   
   .team-item {
     display: flex;
     align-items: center;
-    gap: 10px;
-    padding: 10px;
+    gap: var(--primary-gap);
+    padding: 1%;
     border: 1px solid #ddd;
     border-radius: 5px;
     cursor: pointer;
@@ -51,37 +51,37 @@
   .team-item-1 {
     display: flex;
     align-items: center;
-    gap: 5%;
+    gap: var(--primary-gap);
     padding: 5% 0 5% 0;
     border-bottom: 1px solid #ddd;
     cursor: pointer;
   }
   .team-item-1 img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 8%;
+    height: 8%;
+    border-radius: var(--primary-border-radius);
   }
   .bat {
-    padding-top: 10%;
+    padding-top: 5%;
   }
 
 
 .team-item img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 15%;
+    height: 55%;
+    border-radius: var(--primary-border-radius);
   }
   
 .player-details {
     width: 70%;
-    padding: 20px;
+    padding: 1rem;
     border: 1px solid #ddd;
-    border-radius: 5px;
+    border-radius: 8px;
   }
   
   .player-list {
     display: flex;
-    gap: 20px;
+    gap: var(--primary-gap);
     flex-wrap: wrap;
   }
   
@@ -90,12 +90,12 @@
     flex-direction: column;
     align-items: center;
     text-align: center;
-    gap: 5px;
+    gap: var(--primary-gap);
   }
   
   .player-card img {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+    border-radius: var(--primary-border-radius);
   }
   

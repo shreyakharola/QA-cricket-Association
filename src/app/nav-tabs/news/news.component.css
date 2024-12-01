@@ -1,31 +1,32 @@
 .news-container {
-    width: 80%;
+    max-width: var(--primary-max-width);
     margin: 2% auto;
-    font-family: Arial, sans-serif;
+    font-family: var(--primary-font-family);
   }
   
   h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: var(--secondary-font-size);
+    margin-bottom: var(--secondary-margin-bottom);
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .top-news {
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: var(--primary-gap);
   }
   
   .news-card {
     display: flex;
     align-items: center;
-    width: calc(50% - 10px);
+    width: 45%;
   }
   
   .news-card img {
-    max-width: 100px;
-    max-height: 100px;
-    border-radius: 8px;
-    margin-right: 10px;
+    max-width: 55%;
+    max-height: 55%;
+    border-radius: var(--secondary-border-radius);
+    margin-right: 5%;
   }
   
   .news-details {
@@ -33,19 +34,19 @@
   }
   
   .news-details .author {
-    font-size: 12px;
+    font-size: var(--primary-font-size);
     color: #666;
-    margin-bottom: 5px;
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .news-details .title {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
     color: #000;
   }
   
   hr {
-    margin: 20px 0;
+    margin: 1% 0;
     border: none;
     height: 1px;
     background-color: #ddd;
@@ -54,7 +55,7 @@
   .main-news {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: var(--primary-gap);
   }
   
   .main-news-card {
@@ -63,29 +64,29 @@
   }
   
   .main-news-card img {
-    max-width: 100%;
-    max-height: 300px;
+    max-width: var(--primary-max-width);
+    max-height: 20em;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: var(--secondary-border-radius);
   }
   
   .main-news-card .news-details {
-    margin-top: 10px;
+    margin-top: var(--secondary-margin-bottom);
   }
   
   .main-news-card .news-details .author {
-    font-size: 12px;
+    font-size: var(--primary-font-size);
     color: #666;
   }
   
   .main-news-card .news-details .title {
-    font-size: 18px;
-    font-weight: bold;
-    margin: 5px 0;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
+    margin: 1% 0;
   }
   
   .main-news-card .news-details .description {
-    font-size: 14px;
+    font-size: var(--primary-font-size);
     color: #444;
   }
   

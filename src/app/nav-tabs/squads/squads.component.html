@@ -1,54 +1,43 @@
 <div class="squad-container">
-    <h1>{{ title }}</h1>
-    <div class="teams">
-      <div class="team-list">
-        <div *ngFor="let team of teams" class="team-item">
-          
-          <img [src]="team.flag" alt="{{ team.name }} Flag" />
-          <div>
-            <h3>{{ team.name }}</h3>
-            <p>{{ team.playersCount }} Players</p>
-          </div>
-        
+  <h1>{{ title }}</h1>
+  <div class="teams">
+    <div class="team-list">
+      <div *ngFor="let team of teams; let i = index" class="team-item" (click)="showPlayers(i)">
+        <img [src]="team.flag" alt="{{ team.name }} Flag" />
+        <div>
+          <h3>{{ team.name }}</h3>
+          <p>{{ team.playersCount }} Players</p>
         </div>
       </div>
-  
-     
-      <div class="team-list-1" *ngIf="teams[0]">
-        <div class="team-item-1">
-          <img src="assets/flags/india.png" alt="Flag" />
+    </div>
+ 
+
+  <div *ngIf="selectedTeam">
+    <h2>{{ selectedTeam.name }} Players</h2>
+    <div class="bat">
+      <h3>Bat ({{ teams[0].players.length }})</h3>
+      <div class="player-list">
+        <div *ngFor="let player of teams[0].players" class="player-card">
+          <img [src]="player.avatar" alt="{{ player.name }} Avatar" />
           <div>
-            <h3>India</h3>
-            <p>15 Players</p>
+            <p>{{ player.name }}</p>
+            <p>{{ player.role }}</p>
           </div>
         </div>
-        <div class="bat">
-          <h3>Bat ({{ teams[0].players.length }})</h3>
-          <div class="player-list">
-            <div *ngFor="let player of teams[0].players" class="player-card">
-              <img [src]="player.avatar" alt="{{ player.name }} Avatar" />
-              <div>
-                <p>{{ player.name }}</p>
-                <p>{{ player.role }}</p>
-              </div>
-            </div>
+      </div>
+    </div>
+    <div class="bat">
+      <h3>Bowl ({{ teams[0].players.length }})</h3>
+      <div class="player-list">
+        <div *ngFor="let player of teams[0].players" class="player-card">
+          <img [src]="player.avatar" alt="{{ player.name }} Avatar" />
+          <div>
+            <p>{{ player.name }}</p>
+            <p>{{ player.role }}</p>
           </div>
         </div>
-
-        <div class="bat">
-          <h3>Bowl ({{ teams[0].players.length }})</h3>
-          <div class="player-list">
-            <div *ngFor="let player of teams[0].players" class="player-card">
-              <img [src]="player.avatar" alt="{{ player.name }} Avatar" />
-              <div>
-                <p>{{ player.name }}</p>
-                <p>{{ player.role }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
       </div>
     </div>
   </div>
-  
+</div>
+</div>

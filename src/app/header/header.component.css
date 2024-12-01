@@ -5,7 +5,7 @@
 
 a {
     text-decoration: none;
-    color: white;
+    color: var(--primary-color);
     padding: 0 2rem;
 }
 
@@ -29,7 +29,7 @@ a {
 }
 
 .column2 li {
-    font-family: system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: var(--primary-font-family);
 }
 
 .column1 {
@@ -40,7 +40,7 @@ a {
 }
 
 .column1 img {
-    max-width: 100%;
+    max-width: var(--primary-max-width);
     height: auto;
 }
 

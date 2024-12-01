@@ -1,40 +1,31 @@
 .table-container {
-    background-color: white;
-    color: black;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
     border-radius: 10px 10px 0 0;
     width: 20rem;
     text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--primary-font-family);
     margin-top: 20%;
   }
   
   h3 {
-    margin: 0;
-    font-size: 1.2em;
+    font-size: var(--primary-font-size);
+    margin-top: 1%;
   }
   
   table {
-    width: 100%;
-    margin-top: 10px;
-    border-collapse: collapse;
+    min-width: var(--primary-min-width);
   }
   
   table th, table td {
-    padding: 8px;
+    padding: var(--secondary-padding);
     text-align: center;
-    color: black;
+    color: var(--secondary-color);
     
   }
   
   table th {
     background-color: #f4f4f4;
   }
-  
-  .app-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
-    background-color: #8A1738;
-    color: white;
-  }
+
  

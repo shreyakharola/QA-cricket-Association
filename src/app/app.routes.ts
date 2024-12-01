@@ -6,7 +6,7 @@ import { MatchesComponent } from './nav-tabs/matches/matches.component';
 import { SeriesStatsComponent } from './nav-tabs/series-stats/series-stats.component';
 import { NewsComponent } from './nav-tabs/news/news.component';
 import { InfoComponent } from './nav-tabs/info/info.component';
-import { SquadsComponent } from './nav-tabs/squads-main/squads/squads.component';
+import { SquadsComponent } from './nav-tabs/squads/squads.component';
 import { ScorecardComponent } from './nav-tabs/matches/scorecard/scorecard.component';
 import path from 'node:path';
 

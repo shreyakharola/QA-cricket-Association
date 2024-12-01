@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 20px;
-    font-family: Arial, sans-serif;
+    padding: var(--primary-padding);
+    font-family: var(--primary-font-family);
   }
   
   h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: var(--secondary-font-size);
+    margin-bottom: var(--secondary-margin-bottom);
   }
   
   .match-summary {
@@ -17,10 +17,10 @@
     justify-content: center;
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    padding: var(--primary-padding);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    width: 100%;
+    max-width: 50%;
+    width: var(--primary-width);
     background-color: #f9f9f9;
   }
   
@@ -28,18 +28,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 0 20px;
+    margin: 0 2%;
   }
   
   .team img {
-    width: 60px;
-    height: 40px;
-    margin-bottom: 8px;
+    width: 3rem;
+    height: 3rem;
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .team p {
-    font-size: 16px;
-    font-weight: bold;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .score {
@@ -48,18 +48,17 @@
   
   .score h1 {
     font-size: 36px;
-    font-weight: bold;
-    margin: 0;
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .score p {
-    font-size: 14px;
-    margin-top: 8px;
+    font-size: var(--primary-font-size);
+    margin-top: var(--primary-margin-top);
     color: #555;
   }
   
   .winner {
     color: green;
-    font-weight: bold;
+    margin-bottom: var(--primary-margin-bottom);
   }
   

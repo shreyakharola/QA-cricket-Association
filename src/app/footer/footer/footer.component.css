@@ -4,38 +4,27 @@
     align-items: flex-start;
     background-color: #3a3a3a;
     color: #ffffff;
-    padding: 20px;
+    padding: var(--primary-padding);
   }
-  
-  .logo {
-    display: flex;
-    align-items: center;
-  }
-  
-  .logo img {
-    height: 40px;
-    margin-right: 10px;
-  }
-  
   .links {
     display: flex;
     justify-content: space-between;
-    width: 100%;
-    padding: 3%;
+    min-width: var(--primary-min-width);
+    padding: var(--primary-padding);
   }
   
   .left-links,
   .right-links {
     display: flex;
     flex-direction: column;
-    gap: 10px; 
+    gap: var(--primary-gap); 
   }
   
   .left-links a,
   .right-links a {
     text-decoration: none;
     color: #ffffff;
-    font-size: 14px;
+    font-size: var(--primary-font-size);
     transition: color 0.3s;
   }
   

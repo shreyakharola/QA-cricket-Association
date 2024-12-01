@@ -1,35 +1,33 @@
-/* Container Styling */
 .container {
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  font-family: var(--primary-font-family);
+    padding: var(--primary-padding);
     color: #333;
   }
   
   h3 {
-    font-size: 24px;
-    margin-bottom: 20px;
+    font-size: var(--secondary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .match-section {
-    margin-bottom: 20px;
-    padding: 15px 0;
+    margin-bottom: var(--secondary-margin-bottom);
+    padding: 2% 0;
     border-bottom: 1px solid #ddd;
   }
   
   h4 {
-    font-size: 18px;
-    margin-bottom: 5px;
-    font-weight: bold;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
+    margin-bottom: var(--primary-margin-bottom);
     color: #555;
   }
   
   p {
-    font-size: 14px;
-    color: #777;
-    margin-bottom: 10px;
+    font-size: var(--primary-font-size);
+    color: #555;
+    margin-bottom: var(--primary-margin-bottom);
   }
   
-  /* Teams Section */
   .teams {
     display: flex;
     justify-content: space-between;
@@ -44,29 +42,27 @@
   .team {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: var(--primary-gap);
   }
   
   .team img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
+    width: 3rem;
+    height: 3rem;
+    border-radius: var(--primary-border-radius);
   }
   
   .team h5 {
-    font-size: 16px;
-    margin: 0;
-    font-weight: bold;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
   }
   
   .team p {
-    margin: 0;
-    font-size: 14px;
+    font-size: var(--primary-font-size);
     color: #555;
   }
   
   .result {
     text-align: center;
-    font-size: 14px;
+    font-size: var(--primary-font-size);
   }
   

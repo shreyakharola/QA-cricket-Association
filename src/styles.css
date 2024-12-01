@@ -1,4 +1,24 @@
-html, body { height: 100%; width: 100%; overflow-x: hidden;}
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-
-
+:root {
+    --primary-color: white;
+    --secondary-color: black;
+    --primary-background-color: #8a1738;
+    --primary-gap: 1em;
+    --secondary-gap: 5rem;
+    --primary-font-size:15px;
+    --secondary-font-size:20px;
+    --primary-min-width: 100%;
+    --secondary-min-width: 40%;
+    --primary-max-width:100%;
+    --secondary-max-width: 80%;
+    --primary-padding:2%;
+    --secondary-padding:5%;
+    --primary-font-family: 'system-ui, 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif';
+    --primary-width: 100%;
+    --primary-margin-bottom:10px;
+    --secondary-margin-bottom:20px;
+    --primary-font-weight:bold;
+    --primary-border-radius:50%;
+    --secondary-border-radius:4%;
+    --primary-margin-top:5%;
+    --secondary-margin-top:2%;
+}

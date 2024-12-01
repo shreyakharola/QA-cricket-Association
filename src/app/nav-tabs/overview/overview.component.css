@@ -1,6 +1,6 @@
 .row {
     display: flex;
-    width: 100%;
+    width: var(--primary-width);
     height: auto;
 }
 
@@ -12,20 +12,20 @@
 
 .column-right {
     width: 40%;
-    padding-left: 5%;
+    padding-left: 8%;
     border-left: thin solid #e6e6e6;
 }
 
 h5 {
-    margin-top: 5%;
+    margin-top: var(--primary-margin-top);
 }
 
 .sub-heading {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 100%;
-    margin-top: 1rem;
+    width: var(--primary-width);
+    margin-top: var(--primary-margin-top);
 
 }
 
@@ -33,10 +33,8 @@ h5 {
     color: rgb(1, 69, 146);
 }
 
-/* Fixtures */
-
 .fixtures {
-    margin-top: 1rem;
+    margin-top: var(--primary-margin-top);
 }
 
 .fixture-item {
@@ -53,10 +51,10 @@ h5 {
 }
 
 .team img {
-    width: 24px;
-    height: 24px;
-    margin-right: 5px;
-    border-radius: 50%;
+    width: 2rem;
+    height: 2rem;
+    margin-right: 1%;
+    border-radius: var(--primary-border-radius);
 }
 
 .match-info {
@@ -66,29 +64,29 @@ h5 {
 
 /* Key Stats */
 .key-stats {
-    width: 100%;
-    padding: 10px;
+    width: var(--primary-width);
+    padding: 1%;
 }
 
 .key-stats h5 {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
-    font-weight: bold;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
+    margin-bottom: var(--primary-margin-bottom);
 }
 
 .stat-item {
     border: 1px solid #e0e0e0;
     border-radius: 8px;
-    padding: 20px;
-    margin-bottom: 15px;
+    padding: var(--secondary-padding);
+    margin-bottom: var(--primary-margin-bottom);
     background-color: #fff;
 }
 
 .stat-item h6 {
-    font-size: 0.9rem;
+    font-size: var(--primary-font-size);
     color: #777;
     margin-bottom: 10px;
-    font-weight: bold;
+    margin-bottom: var(--primary-margin-bottom);
 }
 
 .stat-content {
@@ -99,7 +97,7 @@ h5 {
 .stat-content img {
     width: 50px;
     height: 50px;
-    margin-right: 15px;
+    margin-right: 10px;
 }
 
 .stat-details {
@@ -107,16 +105,14 @@ h5 {
 }
 
 .player-name {
-    font-size: 1rem;
-    font-weight: bold;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
     color: #333;
-    margin: 0;
 }
 
 .country {
-    font-size: 0.8rem;
+    font-size: var(--primary-font-size);
     color: #777;
-    margin: 0;
 }
 
 .stat-value {
@@ -124,14 +120,13 @@ h5 {
 }
 
 .stat-number {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
     color: #333;
 }
 
 .stat-label {
-    font-size: 0.8rem;
+    font-size: var(--primary-font-size);
     color: #777;
 }
 
@@ -139,8 +134,8 @@ h5 {
     display: flex;
     justify-content: left;
     padding-top: 5%;
-    font-size: 1.3rem;
-    font-weight: 500;
+    font-size: var(--primary-font-size);
+    margin-bottom: var(--primary-margin-bottom);
 }
 
 .series-match-info {
@@ -153,10 +148,10 @@ p{
 
 .series-team {
     display: flex;
-    font-size: 1.0em;
+    font-size: var(--primary-font-size);
     color: #777;
     font-weight: 200;
-    padding: 2%;
+    padding: var(--primary-padding);
 }
 
 .series-item {
@@ -164,7 +159,7 @@ p{
     align-items: center;
     border-bottom: 1px solid #ddd;
     column-gap: 15%;
-    padding: 2%;
+    padding: var(--primary-padding);
     color:#000;
-    font-weight: 500;
+    margin-bottom: var(--primary-margin-bottom);
 }

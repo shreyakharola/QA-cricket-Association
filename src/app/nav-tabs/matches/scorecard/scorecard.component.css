@@ -1,7 +1,7 @@
 .banner-container {
   display: flex;
   min-height: 40%;
-  min-width: 100%;
+  min-width: var(--primary-min-width);
   justify-content: space-around;
   align-items: center;
   background-color: #4b091c; 
@@ -17,7 +17,7 @@
 .team-score {
   display: flex;
   align-items: center;
-  font-size: 16px;
+  font-size: var(--primary-font-size);
   justify-content: center;
 }
 
@@ -25,12 +25,12 @@
   width: 15%;
   height: 15%;
   margin-right: 4%;
-  border-radius: 50%;
+  border-radius: var(--primary-border-radius);
 }
 
 .result-section {
-  min-width: 40%;
-  font-weight: bold;
+  min-width: var(--secondary-min-width);
+  margin-bottom: var(--primary-margin-bottom);
   text-align: center;
   color: goldenrod;
 }
@@ -46,11 +46,9 @@
 .nav-tabs .tab {
   color: #ffffff;
   text-decoration: none;
-  padding: 10px 20px;
-  font-weight: 500;
-  margin: 0 5px;
+  padding: 1% 2%;
+  margin-bottom: var(--primary-margin-bottom);
 }
-
 
 .nav-tabs .selected {
     color: #f05454;
@@ -58,15 +56,14 @@
 }
 
 .container{
-  font-family: Arial, sans-serif;
+  font-family: var(--primary-font-family);
   color: #333;
   display: flex;
   flex-direction: column;
 }
 
-
 .container h3{
-  font-weight: 600;
+  margin-bottom: var(--primary-margin-bottom);
 }
 
 .container button{
@@ -78,9 +75,9 @@
 }
 
 .btn-new {
-  color: #4b091c !important;
-  border-color: #4b091c !important;
-  background-color: transparent !important;
+  color: #4b091c;
+  border-color: #4b091c;
+  background-color: transparent;
 }
 
 .btn-new:hover {

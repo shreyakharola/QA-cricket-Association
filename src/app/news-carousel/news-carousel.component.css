@@ -1,7 +1,7 @@
 .carousel-container {
   position: relative;
-  width: 100%;
-  max-width: 800px; 
+  width: var(--primary-width);
+  max-width: var(--primary-max-width); 
   margin: 0 auto; 
   overflow: hidden;
 }
@@ -12,7 +12,7 @@
 }
 
 .picsum-img-wrapper img {
-  width: 100%;
+  width: var(--primary-width);
   height: 100%;
   object-fit: cover; 
   display: block;
@@ -21,7 +21,7 @@
 .app-container {
   display: flex;
   justify-content: space-around;
-  padding: 20px;
+  padding: var(--primary-padding);
   background-color: #8A1738;
-  color: white;
+  color: var(--primary-color);
 }

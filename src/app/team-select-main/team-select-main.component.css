@@ -2,15 +2,15 @@
   display: flex;
   align-items: center;
   position: relative;
-  width: 100%;
+  width: var(--primary-width);
 }
 
 .card-row {
   display: flex;
   overflow-x: auto;
   scroll-behavior: smooth;
-  gap: 5rem;
-  background-color: #8A1738;
+  gap: var(--secondary-gap);
+  background-color: var(--primary-background-color);
   height: 40%;
   flex-wrap: nowrap;
   padding: 0 5.0em 0 3.0em;
@@ -42,9 +42,9 @@
   justify-content: center;
   width: 10rem;
   text-align: center;
-  color: #8A1738;
-  border-radius: 5%;
-  font-weight: 500;
+  color: var(--primary-background-color);
+  border-radius: var(--secondary-border-radius);
+  margin-bottom: var(--primary-margin-bottom);
 }
 
 .a_card {
@@ -52,8 +52,8 @@
 }
 
 .card img {
-  width: 100%;
+  width: var(--primary-width);
   height: 100%;
-  border-radius: 5%;
+  border-radius: var(--secondary-border-radius);
 }
 
