@@ -1,6 +1,6 @@
 .banner-container {
   display: flex;
-  min-height: 40%;
+  min-height: 10rem;
   min-width: var(--primary-min-width);
   justify-content: space-around;
   align-items: center;

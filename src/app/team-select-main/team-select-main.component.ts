@@ -16,7 +16,6 @@ export class TeamSelectMainComponent {
   @Input() teamImage: string = '';
   @Input() teamName: string = '';
   
-
   constructor(private router: Router) {}
 
   goToDetail() {

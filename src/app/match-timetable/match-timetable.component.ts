@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { DataService } from '../data.service';
 
 @Component({
   selector: 'app-match-timetable',
@@ -9,9 +10,10 @@ import { Component } from '@angular/core';
   styleUrl: './match-timetable.component.css'
 })
 export class MatchTableComponent {
-  teams = [
-    { name: 'RCB', matches: 10, points: 30, nrr: '+2.225' },
-    { name: 'GT', matches: 10, points: 27, nrr: '+2.054' },
-    { name: 'CSK', matches: 10, points: 24, nrr: '+1.345' },
-  ];
+  matchTable: any[]=[];
+  constructor(private dataService: DataService){}
+  
+  ngOnInit(){
+    this.matchTable = this.dataService.getMatchTable();
+  }
 }
